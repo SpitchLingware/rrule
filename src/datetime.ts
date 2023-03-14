@@ -174,9 +174,9 @@ export class DateTime extends Time {
       const { div: hourDiv, mod: minuteMod } = divmod(this.minute, 60)
       if (hourDiv) {
         this.minute = minuteMod
-        this.addHours(hourDiv, false, byhour)
+        // the hour step is ALWAYS 1
+        this.addHours(1, false, byhour)
       }
-
       if (
         (empty(byhour) || includes(byhour, this.hour)) &&
         (empty(byminute) || includes(byminute, this.minute))
