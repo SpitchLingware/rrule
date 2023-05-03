@@ -103,7 +103,7 @@ function parseRrule(line: string) {
       default:
         throw new Error("Unknown RRULE property '" + key + "'")
     }
-  })
+  });
 
   return options
 }

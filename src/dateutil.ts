@@ -28,8 +28,9 @@ export const ONE_DAY = 1000 * 60 * 60 * 24
 
 /**
  * @see: <http://docs.python.org/library/datetime.html#datetime.MAXYEAR>
+ * TODO: setting the max year prevents long loops until the maximum value, the UNTIL datetime must be used instead the MAXYEAR
  */
-export const MAXYEAR = 9999
+export const MAXYEAR = 2025
 
 /**
  * Python uses 1-Jan-1 as the base for calculating ordinals but we don't

@@ -1,6 +1,6 @@
 {
   "name": "@spitchlingware/rrule",
-  "version": "2.7.6",
+  "version": "2.7.8",
   "description": "JavaScript library for working with recurrence rules for calendar dates.",
   "homepage": "http://jakubroztocil.github.io/rrule/",
   "license": "BSD-3-Clause",

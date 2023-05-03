@@ -50,15 +50,18 @@ export class DateTime extends Time {
   public year: number
 
   static fromDate(date: Date) {
-    return new this(
-      date.getUTCFullYear(),
-      date.getUTCMonth() + 1,
-      date.getUTCDate(),
-      date.getUTCHours(),
-      date.getUTCMinutes(),
-      date.getUTCSeconds(),
-      date.valueOf() % 1000
-    )
+    if (date) {
+      return new this(
+        date.getUTCFullYear(),
+        date.getUTCMonth() + 1,
+        date.getUTCDate(),
+        date.getUTCHours(),
+        date.getUTCMinutes(),
+        date.getUTCSeconds(),
+        date.valueOf() % 1000
+      )
+    }
+    return null;
   }
 
   constructor(
